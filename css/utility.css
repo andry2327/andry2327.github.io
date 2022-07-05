@@ -1,7 +1,15 @@
 /* color */
 
-.try{
 
-    color: #856de5; /* primary buttons color */
-    color: #6e2feb; /* hover buttons color */
+.oldColor {
+
+    color: #111111; /* black text in menu color */
 }
+
+.newColor{
+
+    color: #856de5;
+    color: #6e2feb; /* hover buttons color */
+    color: #ffffffb3; /* text color in menu */
+}
+
