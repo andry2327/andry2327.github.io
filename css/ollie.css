@@ -12427,8 +12427,8 @@ p {
 }
 
 .navbar.affix-top {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
 }
 
 .navbar.affix-top .nav-link {
@@ -12436,8 +12436,8 @@ p {
 }
 
 .navbar.affix {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.4rem; /* 0.4 */
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid #111111;
 }
 
