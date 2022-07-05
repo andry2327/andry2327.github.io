@@ -2,11 +2,11 @@
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: url(../imgs/header.jpg);
+    background-image: url(imgs/background.png);
     background-size: cover;
     background-position: center;
     @include flex;
-    flex-direction: column; 
+    flex-direction: column;
 
     .overlay {
         position: absolute;
@@ -27,7 +27,7 @@
         align-items: center;
         margin-top: 100px;
 
-        .carousel-inner {           
+        .carousel-inner {
 
             .carousel-title {
                 font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1300 - 300)));
@@ -50,25 +50,25 @@
     }
 
     // header title
-	&-title {
-		font-size: 2.4rem;
-		font-weight: bold;
-		opacity: .8;
-		color: $body-color;
-	}
+    &-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        opacity: .8;
+        color: $body-color;
+    }
 
-	// header mini
-	&-mini {
-		min-height: 24rem;
-		height: 24rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		padding: 1rem;
-		background: lighten($primary, 20%);
-	}
+    // header mini
+    &-mini {
+        min-height: 24rem;
+        height: 24rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        background: lighten($primary, 20%);
+    }
 
 }
 
@@ -84,7 +84,7 @@
 
     }
 
-    .infos{
+    .infos {
         margin-top: 40px;
         flex-direction: column;
         padding: 0 10px;
@@ -99,22 +99,16 @@
             margin-top: 20px;
         }
     }
-        
+
 }
+
 @include media-breakpoint-down(sm) {
 
-    .header{
+    .header {
+
         .carousel-control-prev,
         .carousel-control-next {
             display: none !important;
         }
     }
 }
-
-
-
-
-
-
-
-
