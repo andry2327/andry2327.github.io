@@ -12179,12 +12179,13 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  color: #fff;
 }
 
 p {
   font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
   opacity: .9;
-  color: #111;
+  color: #fff;
   letter-spacing: .6px;
 }
 
@@ -12437,7 +12438,8 @@ p {
 }
 
 .navbar.affix {
-  padding-top: 0.4rem; /* 0.4 */
+  padding-top: 0.4rem;
+  /* 0.4 */
   padding-bottom: 0.4rem;
   border-bottom: 1px solid #111111;
 }
@@ -12471,7 +12473,7 @@ p {
 }
 
 .navbar-brand .brand-img {
-  width: 50px; 
+  width: 50px;
   margin: -0.3125rem 0;
 }
 
@@ -12817,8 +12819,9 @@ pre .code {
   padding: 60px 10px;
 }
 
-.section:nth-child(odd) {
-  background-color: #f1fafb;
+.section:nth-child(even) {
+  background-color: #1e0d2b;
+  /* #f1fafb */
 }
 
 .section.p-sm {
@@ -12831,5 +12834,6 @@ pre .code {
 
 .section.bg-overlay {
   background: #2C3E50;
+  /* 2C3E50 */
   color: #fff;
 }
