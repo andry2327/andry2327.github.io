@@ -12820,7 +12820,7 @@ pre .code {
 }
 
 .section:nth-child(even) {
-  background-color: #1e0d2b;
+  background-color: #2b123e;
   /* #f1fafb */
 }
 
@@ -12833,7 +12833,6 @@ pre .code {
 }
 
 .section.bg-overlay {
-  background: #2C3E50;
-  /* 2C3E50 */
+  background: #2C3E50;/* 2C3E50 */
   color: #fff;
 }
