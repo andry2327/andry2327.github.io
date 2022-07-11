@@ -4863,8 +4863,6 @@ input[type="button"].btn-block {
   display: block;
   padding: .5rem 1rem;
   text-align: center;
-  list-style: none;
-  display: flex;
 }
 
 .nav-link:hover,
@@ -12861,4 +12859,8 @@ pre .code {
 .nav-link li a {
   transition: color 0.3s ease 0s;
 }
+
+
+
+
 
