@@ -32,6 +32,8 @@
 
         gtag('config', 'G-S732GRP0MH');
     </script>
+    <!-- CUSTOM js -->
+    <script src="js/custom.js"></script>
 
 </head>
 
@@ -82,17 +84,17 @@
             <div class="container">
                 <div class="row">
                     <div class="column3">
-                        <a class="nav-link btn2" href="#">
+                        <a class="nav-link btn2" onclick="hide_show_1()" href="#">
                             <h5>1st</h5>
                         </a>
                     </div>
                     <div class="column3">
-                        <a class="nav-link btn2" href="#">
+                        <a class="nav-link btn2" onclick="hide_show_2()" href="#">
                             <h5>2nd</h5>
                         </a>
                     </div>
                     <div class="column3">
-                        <a class="nav-link btn2" href="#">
+                        <a class="nav-link btn2" onclick="hide_show_3()" href="#">
                             <h5>3rd</h5>
                         </a>
                     </div>
@@ -125,10 +127,10 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <hr class="solid2">
-
+                    </div>     
+                </div>
             </div>
+            <hr class="solid" id="hr12">
             <div class="pdf-section" id="2nd"> <!-- 2nd Year -->
             
                 <div class="pdf-element">
@@ -293,8 +295,9 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="solid2">
                 </div>
+            </div>
+            <hr class="solid" id="hr23">
 
             <div class="pdf-section" id="3rd"> <!-- 3rd Year -->
                 <div class="pdf-element">
@@ -455,13 +458,12 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="solid2">
                 </div>
             </div>
                 <!-- write here more  -->
         </div>
     
-        <hr class="solid">
+        
     
     </div>
 
@@ -480,5 +482,57 @@
 
 <!-- Ollie js -->
 <script src="js/Ollie.js"></script>
+
+<!-- CUSTOM js -->
+<script>
+    function hide_show_1() {
+
+        var one = document.getElementById("1st");
+        var two = document.getElementById("2nd");
+        var three = document.getElementById("3rd");
+        var hr12 = document.getElementById("hr12");
+        var hr23 = document.getElementById("hr23");
+
+        one.style.display = "block";
+        two.style.display = "none";
+        three.style.display = "none";
+
+        hr12.style.display = "none";
+        hr23.style.display = "none";
+    }
+
+    function hide_show_2() {
+
+        var one = document.getElementById("1st");
+        var two = document.getElementById("2nd");
+        var three = document.getElementById("3rd");
+        var hr12 = document.getElementById("hr12");
+        var hr23 = document.getElementById("hr23");
+        
+        one.style.display = "none";
+        two.style.display = "block";
+        three.style.display = "none";
+
+        hr12.style.display = "none";
+        hr23.style.display = "none";
+
+        }
+
+    function hide_show_3() {
+
+        var one = document.getElementById("1st");
+        var two = document.getElementById("2nd");
+        var three = document.getElementById("3rd");
+        var hr12 = document.getElementById("hr12");
+        var hr23 = document.getElementById("hr23");
+
+        one.style.display = "none";
+        two.style.display = "none";
+        three.style.display = "block";
+
+        hr12.style.display = "none";
+        hr23.style.display = "none";
+    }
+</script>
 
 </html>
