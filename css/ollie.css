@@ -12861,8 +12861,21 @@ pre .code {
   transition: color 0.3s ease 0s;
 }
 
-.column {
+.column3 {
   width: 33.33%;
+}
+
+.column2 {
+  width: 50%;
+}
+
+.column2\3 {
+  width: 66.66%;
+}
+
+.column1\3 {
+  width: 33.33%;
+  float: right;
 }
 
 .btn2 {
@@ -12872,13 +12885,40 @@ pre .code {
 }
 
 .btn2:active, .btn2:hover {
+  background-color: #ffffffb3;
+}
+
+.btn2:focus {
   background-color: #856de5;
 }
 
 /* Solid border */
 hr.solid {
-  border-top: 2px solid #bbb;
+  border-top: 3px solid #bbb;
 }
+
+hr.solid2 {
+  border-top: 1px solid #ffffffb3;
+}
+
+.pdf-element {
+  margin: 15px;
+}
+
+.pdf-element-title {
+  width: 70%;
+}
+
+div.middle-div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
 
 
 
