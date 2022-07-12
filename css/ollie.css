@@ -12894,7 +12894,7 @@ pre .code {
 
 /* Solid border */
 hr.solid {
-  border-top: 3px solid #bbb;
+  border-top: 10px solid #bbb;
 }
 
 hr.solid2 {
