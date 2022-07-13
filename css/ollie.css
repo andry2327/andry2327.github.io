@@ -9741,7 +9741,7 @@ button.bg-dark:focus {
 
 .pr-1,
 .px-1 {
-  padding-right: 0.25rem !important;
+  padding: 0.5rem !important;
 }
 
 .pb-1,
@@ -12127,7 +12127,7 @@ a.text-dark:focus {
 }
 
 .infos .social-links a {
-  font-size: 14px;
+  font-size: 35px;
   color: #fff;
 }
 
