@@ -4870,9 +4870,16 @@ input[type="button"].btn-block {
   height: 100%;
 }
 
+.nav-link.btn2-2 {
+    background-color: #414141;
+  }
+
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+}
+.nav-link:target {
+  color: #6e2feb
 }
 
 .nav-link.disabled {

@@ -81,14 +81,14 @@
             <div class="container">
                 <div class="row" style="height:7.5rem;">
                     <div class="column2" style="margin: auto;">
-                        <a class="nav-link btn2-2" onclick="hide_show_bd()" href="#">
+                        <a id="bd-btn" class="nav-link btn2-2" onclick="hide_show_bd()" href="#">
                             <h3>Computer engeneering</h3>
                             <h6>Bachelor Degree (ITA)</h6>
 
                         </a>
                     </div>
                     <div class="column2" style="margin: auto;">
-                        <a class="nav-link btn2-2" onclick="hide_show_md()" href="#">
+                        <a id="md-btn" class="nav-link btn2-2" onclick="hide_show_md()" href="#">
                             <h3>Data Science and Engineering</h3>
                             <h6>Master Degree (ENG)</h6>
                         </a>
@@ -434,6 +434,82 @@
             </div>
     
         </div>
+
+        <div id="master-degree-section">
+        
+            <div class="pdf-section-title pb-4 pt-4">
+                <h6 class="xs-font pt-4 mb-0 ml-3 mr-3">Master Degree (ENG)</h6>
+                <h3 class="section-title pb-4 ml-3 mr-3">Data Science and Engineering</h3>
+            </div>
+        
+            <div class="pdf-section-years">
+                <div class="container">
+                    <div class="row">
+                        <div class="column2">
+                            <a class="nav-link btn2" onclick="hide_show_1md()" href="#">
+                                <h5>1<sup>st</sup>&nbsp year</h5>
+                            </a>
+                        </div>
+                        <div class="column2">
+                            <a class="nav-link btn2" onclick="hide_show_2md()" href="#">
+                                <h5>2<sup>nd</sup>&nbsp year</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <br>
+        
+            <div class="pdf-section">
+        
+                <div class="pdf-section" id="1st-md"> <!-- 1st Year -->
+        
+                    <div class="pdf-element">
+                        <div class="row">
+                            <div class="col-auto mr-auto">
+                                <div class="pdf-element-title">
+                                    <h5>file 1 DEBUG</h5>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class='middle-div'>
+                                    <a
+                                        href="pdf/Computer Engineering/I Anno/Algebra lineare e Geometria Riassunto (prof. Ada Boralevi).pdf">
+                                        <button class="btn btn-primary btn-rounded2 btn-rounded2">Preview</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="solid" id="hr12">
+                <div class="pdf-section" id="2nd-md"> <!-- 2nd Year -->
+        
+                    <div class="pdf-element">
+                        <div class="row">
+                            <div class="col-auto mr-auto">
+                                <div class="pdf-element-title">
+                                    <h5>file 2 DEBUG</h5>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class='middle-div'>
+                                    <a href="pdf/Computer Engineering/II Anno/Algoritmi e Programmazione Riassunto.pdf">
+                                        <button class="btn btn-primary btn-rounded2">Preview</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="solid2">
+                    </div>
+                </div>
+                <hr class="solid" id="hr23">
+        
+               
+            </div>
+        
+        </div>
     
     </div>
 
@@ -455,30 +531,6 @@
 
 <!-- CUSTOM js -->
 <script>
-
-    function hide_show_bd() {
-
-        var one = document.getElementById("bachelor-degree-section");
-
-        one.style.display = "block";
-        two.style.display = "block";
-        three.style.display = "block";
-
-        hr12.style.display = "block";
-        hr23.style.display = "block";
-    }
-
-    function hide_show_md() {
-
-            var one = document.getElementById("bachelor-degree-section");
-
-            one.style.display = "block";
-            two.style.display = "block";
-            three.style.display = "block";
-
-            hr12.style.display = "block";
-            hr23.style.display = "block";
-        }
 
     function hide_show_1() {
 
@@ -527,6 +579,31 @@
 
         hr12.style.display = "none";
         hr23.style.display = "none";
+    }
+
+    function hide_show_bd() {
+
+            var bds = document.getElementById("bachelor-degree-section");
+            var mds = document.getElementById("master-degree-section");
+
+            bds.style.display = "block";
+            mds.style.display = "none";
+
+            document.getElementById("bd-btn").style.backgroundColor = "#856de5";
+            document.getElementById("md-btn").style.backgroundColor = "#414141";
+
+        }
+
+    function hide_show_md() {
+
+        var bds = document.getElementById("bachelor-degree-section");
+        var mds = document.getElementById("master-degree-section");
+
+        bds.style.display = "none";
+        mds.style.display = "block";
+
+        document.getElementById("bd-btn").style.backgroundColor = "#414141";
+        document.getElementById("md-btn").style.backgroundColor = "#856de5";
     }
 </script>
 
