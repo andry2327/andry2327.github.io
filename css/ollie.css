@@ -12205,6 +12205,10 @@ p {
   border-radius: 100px;
 }
 
+.btn-rounded2 {
+  border-radius: 10px;
+}
+
 .breadcrumb {
   font-size: 0.9rem;
 }
