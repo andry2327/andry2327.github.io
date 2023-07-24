@@ -89,3 +89,57 @@
   padding-inline-start: var(--size-6);
   margin-block: var(--size-9) var(--size-3);
 }
+
+/* Arrows button CSS */
+
+.scroll-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Buttons, Scroller, Buttons */
+  gap: var(--_spacer);
+  align-items: center;
+  position: relative;
+}
+
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #111111;
+  border: none;
+  border-radius: 30%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.scroll-button:focus {
+  outline: none;
+}
+
+.scroll-button.scroll-left {
+  grid-column: 1;
+}
+
+.scroll-button.scroll-right {
+  grid-column: 3;
+}
+
+/* Additional styles for left and right arrows */
+.scroll-button::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 16px; /* Adjust arrow size here */
+  border-color: transparent transparent transparent var(--gray-5); /* Adjust arrow color here */
+}
+
+.scroll-button.scroll-right::before {
+  transform: scaleX(1); /* Flip the right arrow to point left */
+}
+
+.scroll-button.scroll-left::before {
+  transform: scaleX(-1); /* Flip the right arrow to point left */
+}
