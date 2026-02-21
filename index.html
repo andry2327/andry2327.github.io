@@ -5,23 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="andry2327 Portfolio">
-    <meta name="author" content="Devcrud">
+    <meta name="author" content="Andrea Pellegrino">
     <meta name="theme-color" content="#111111">
 
-    <title>andry2327 Portfolio</title>
+    <title>andry2327 | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
     <!-- font icons -->
-    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <script src="https://kit.fontawesome.com/8b45dc3edb.js" crossorigin="anonymous"></script>
 
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
-
-    <!-- Bootstrap + Ollie main styles -->
-    <link rel="stylesheet" href="css/ollie.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Modern Styles -->
+    <link rel="stylesheet" href="css/modern.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S732GRP0MH"></script>
@@ -31,21 +27,22 @@
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
         gtag('config', 'G-S732GRP0MH');
     </script>
-
 </head>
 
-<body style="background-color: #111111;" data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix"
+    <nav id="scrollspy" class="navbar navbar-dark bg-transparent navbar-expand-lg fixed-top" data-spy="affix"
         data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="imgs/myAvatar_circle.png" alt="" class="brand-img"></a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="imgs/myAvatar_circle.png" alt="" class="brand-img">
+                <span class="brand-font">andry2327</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,19 +50,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li><a class="nav-link"></a></li> <!-- fake -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li><a class="nav-link"></a></li> <!-- fake -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li><a class="nav-link"></a></li> <!-- fake -->
                     <li class="nav-item">
                         <a class="nav-link" href="University.html">University</a>
                     </li>
-                    <li><a class="nav-link"></a></li> <!-- fake -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacts</a>
                     </li>
@@ -76,42 +72,20 @@
 
 
     <header id="home" class="header">
-        <div class="overlay"></div>
-
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="container">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">andry2327<br> Portfolio</h1>
-                            <a href="#projects">
-                                <button class="btn btn-primary btn-rounded">Projects</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-caption">
+            <h1 class="carousel-title">andry2327<br>Portfolio</h1>
+            <a href="#projects">
+                <button class="btn btn-primary">View Projects</button>
+            </a>
         </div>
 
-        <div class="infos container mb-4 mb-md-2">
-
+        <div class="infos container">
             <div class="socials text-right">
-                <div class="row justify-content-between">
-                    <div class="col">
-                        <div class="social-links">
-                            <a href="https://github.com/andry2327" class="link pr-1"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://t.me/andry2327" class="link pr-1"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://www.instagram.com/_andre.pelle_/" class="link pr-1"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UCdO7dKVLSWTB5BaalG0lSXw" class="link pr-1"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.linkedin.com/in/andrea--pellegrino/" class="link pr-1"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="mailto:pellegrino.andre23@gmail.com" class="link pr-1"><i
-                                    class="fa-solid fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="social-links">
+                    <a href="https://github.com/andry2327" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://t.me/andry2327" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea--pellegrino/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:pellegrino.andre23@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -119,322 +93,70 @@
 
     <section class="section" id="about">
         <div class="container">
-            <div class="row align-items-center mr-auto">
-                <div>
-                    <h3 class="section-title pb-4">About</h3>
-                    <p>Hi I’m Andrea Pellegrino, an Italian student studying Data Science and Engineering at Politecnico
-                        di Torino as Master Degree, currently working on my Thesis at Mixed Reality Lab, ETH Zürich.</p>
-                    <p>I graduated on July 2022 in Computer Engineering (bachelor degree).</p>
-                    <p>During this time I wrote a lot of code in different programming languages. Most of the code I
-                        wrote was related to
-                        University courses, but I managed to write code for personal projects too. Thanks to some
-                        project ideas I had during
-                        this time, I’ve learnt a lot of stuff which I was never taught in school such as Python, PHP,
-                        Github and using APIs.</p>
-                    <p>You can find all of this in the <a href="#projects">Project</a> section (maybe some day I will
-                        write some documentation to fully explain how my
-                        personal projects work).</p>
-                    <p>I also created a section in which you can find all the course summaries I made during Computer
-                        Engineering years at
-                        University, you can find them in the <a href="University.html">University</a> page. I made them
-                        for myself while I was attending the courses and now I
-                        decided to publish them so anyone can read them if they need. They are all written in Italian
-                        because I attended the
-                        course in Italian. Sorry for my bad handwriting but I’ll try to improve 😅.</p>
-                    <p>If you want to know more about me and my hobbies you can check my <a
-                            href="https://www.youtube.com/channel/UCdO7dKVLSWTB5BaalG0lSXw">Youtube</a> channel and <a
-                            href="https://www.instagram.com/_andre.pelle_/">Instagram</a> page or click on the
-                        <a href="#contact">Contact</a> section.
-                    </p>
-                </div>
+            <div class="about-card">
+                <h3 class="section-title">About Me</h3>
+                <p>Hi I’m Andrea Pellegrino, an Italian student studying Data Science and Engineering at Politecnico
+                    di Torino as a Master's student, currently working on my Thesis at Mixed Reality Lab, ETH Zürich.</p>
+                <p>I graduated in July 2022 in Computer Engineering (Bachelor's degree).</p>
+                <p>During this time, I wrote a lot of code in various programming languages. Most of it was related to
+                    University courses, but I managed to build personal projects too. Pursuing these side projects taught me
+                    skills rarely covered in school, such as Python, PHP, GitHub, and working with APIs.</p>
+                <p>You can find all of this in the <a href="#projects">Projects</a> section. I also maintain a dedicated 
+                    <a href="University.html">University</a> page where you can find the comprehensive course summaries I made 
+                    during my Computer Engineering studies (written in Italian).</p>
+                <p>If you want to know more about me and my hobbies, you can check my <a
+                        href="https://www.youtube.com/channel/UCdO7dKVLSWTB5BaalG0lSXw" target="_blank">YouTube</a> channel or click on the
+                    <a href="#contact">Contact</a> section.
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- Career Section -->
+    <section class="section" id="career">
+        <div class="container">
+            <h3 class="section-title">Experience</h3>
+            <div id="career-container">
+                <!-- Career items dynamically loaded here from js/main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="section" id="projects">
         <div class="container">
             <h3 class="section-title">Projects</h3>
-        </div>
-        <div class="container-project">
-            <div class="scroll-container">
-
-                <div class="media-scroller-wrapper">
-                    <div class="media-scroller snaps-inline">
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/Semantic-Segmentation-for-Waste-sorting-1217c57b579c468fb31813f631f18c99?pvs=4"
-                                class="item expertises-item">
-                                <img src="imgs/projects/SemSeg ws 2.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Resource Constrained Semantic Segmentation for Waste Sorting</h6>
-                                <p class="xs-font">Deep Learning models (ENet, BiSeNet and ICNet) are employed to
-                                    improve performances in
-                                    automatic waste sorting.
-                                    The objective is to enhance all three models while adapting them to a 10MB memory
-                                    constraint, aiming to
-                                    achieve optimal performance. (Master Degree project in PoliTo)</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/Machine-Learning-for-speech-recognition-b5c502b6364e4a3cb9d3e3bbd50f9445"
-                                class="item expertises-item">
-                                <img src="imgs/projects/DSL_project_crop.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Machine Learning for Speech Recognition</h6>
-                                <p class="xs-font">Machine Learning algorithms are used on an audio recordings dataset
-                                    with the aim of
-                                    predicting the intent expressed (Master Degree project in PoliTo)</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/Emotions-and-Topics-Injection-for-Abstractive-Dialogue-Summarization-fe52a7f5f04d46eb8e24b1512b90cfff?pvs=4"
-                                class="item expertises-item">
-                                <img src="imgs/projects/NLP.jpg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Emotions and Topics Injection for Abstractive
-                                    Dialogue Summarization</h6>
-                                <p class="xs-font">By incorporating emotions and topics informations, an abstractive dialogue summarization model can generate more informative and accurate summaries that reflect the essence of the conversation.</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/Quixo-with-Reinforcement-Learning-e12b9982630b4deaae44607194932a97?pvs=4"
-                                class="item expertises-item">
-                                <img src="imgs/projects/Quixo RL.jpg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Quixo with Reinforcement Learning</h6>
-                                <p class="xs-font">Developed an agent based on Reinforcement Learning techniques, capable of playing the Quixo game through a policy learned with Q-learning</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/TicTacToe-with-Reinforcement-Learning-ac576eac91124a8b998b0be221cff495?pvs=4"
-                                class="item expertises-item">
-                                <img src="imgs/projects/TicTacToe RL from Picsart.jpg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">TicTacToe with Reinforcement Learning</h6>
-                                <p class="xs-font">The goal of this project was to create and train an agent based on reinforcement learning strategies able to play TicTacToe</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/SureBetting-Bot-f5c3c41e2bb34219bd9ccf0a302823d6"
-                                class="item expertises-item">
-                                <img src="imgs/projects/surebetting.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">SureBetting Bot</h6>
-                                <p class="xs-font">Software to win sport bets without gambling, built using Python and
-                                    Telegram APIs</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://andry2327.notion.site/Podcasts-Juice-5e41f479d4b4494582e05bd50753eea8?pvs=4"
-                                class="item expertises-item">
-                                <img src="imgs/projects/Podcasts_Juice_crop.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Podcasts Juice</h6>
-                                <p class="xs-font">TikTok and YouTube pages where contents are created with the help of
-                                    AI</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://github.com/andry2327/Web3_Dev/tree/master/YT%20Course"
-                                class="item expertises-item">
-                                <img src="imgs/projects/web3.png"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Web 3 Dev (Youtube Course)</h6>
-                                <p class="xs-font">Code from a Youtube course on Ethereum Blockchain, Solidity, and Full
-                                    Stack Web3 Development
-                                    with JavaScript</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://github.com/andry2327/Sir.DDaily" class="item expertises-item">
-                                <img src="imgs/projects/sir_crop.jpeg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Sir.DDaily</h6>
-                                <p class="xs-font">A Telegram bot which sends ads link to watch</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://github.com/andry2327/Algoritmi-e-Programmazione-Laboratori"
-                                class="item expertises-item">
-                                <img src="imgs/projects/C_polito.jpeg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Algoritmi e Programamzione (PoliTo, 2nd Year)</h6>
-                                <p class="xs-font">Course exercises in C</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://github.com/andry2327/Programmazione-a-Oggetti-Laboratori"
-                                class="item expertises-item">
-                                <img src="imgs/projects/Java_polito.jpeg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Programmazione a Oggetti (PoliTo, 2nd Year)</h6>
-                                <p class="xs-font">Course exercises in Java</p>
-                            </a>
-                        </div>
-                        <div class="media-element">
-                            <a href="https://github.com/andry2327/Calcolatori-Elettronici-Laboratori"
-                                class="item expertises-item">
-                                <img src="imgs/projects/ASM_polito.jpeg"
-                                    alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-                                    class="box-shadow">
-                                <h6 class="mt-3 mb-2">Calcolatori Elettronici (PoliTo, 2nd Year)</h6>
-                                <p class="xs-font">Course exercises in Assembly (MIPS 32)</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+            <div id="projects-container" class="row">
+                <!-- Project items dynamically loaded here from js/main.js -->
             </div>
         </div>
-
     </section>
 
     <section class="section" id="contact">
-
-        <div class="container">
-            <h3 class="section-title mb-5">Contacts</h3>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="https://github.com/andry2327"><i
-                                    class="fa-brands fa-github fa-4x"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="https://t.me/andry2327"><i
-                                    class="fa-brands fa-telegram fa-4x"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="https://www.instagram.com/_andre.pelle_/"><i
-                                    class="fa-brands fa-instagram fa-4x"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="https://www.youtube.com/channel/UCdO7dKVLSWTB5BaalG0lSXw"><i
-                                    class="fa-brands fa-youtube fa-4x"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="https://www.linkedin.com/in/andrea--pellegrino/"><i
-                                    class="fa-brands fa-linkedin fa-4x"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-sm">
-                        <p align="center">
-                            <a class="social-links2" href="mailto:pellegrino.andre23@gmail.com"><i
-                                    class="fa-solid fa-envelope fa-4x"></i></a>
-                        </p>
-                    </div>
-                </div>
+        <div class="container text-center">
+            <h3 class="section-title">Get in Touch</h3>
+            <div class="social-links-contact mt-5 d-flex justify-content-center" style="gap: 5rem;">
+                <a href="https://github.com/andry2327" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrea--pellegrino/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://t.me/andry2327" target="_blank" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:pellegrino.andre23@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/_andre.pelle_/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCdO7dKVLSWTB5BaalG0lSXw" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
 
-            <footer class="footer mt-5 border-top">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <p class="mb-0">Copyright
-                            <script>document.write(new Date().getFullYear())</script> &copy; <a target="_blank"
-                                href="https://www.devcrud.com">DevCRUD</a>
-                        </p>
-                    </div>
-                </div>
+            <footer>
+                <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; Andrea Pellegrino.</p>
             </footer>
         </div>
     </section>
 
-    <!-- core  -->
-    <script src="vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Owl carousel  -->
-    <script src="vendors/owl-carousel/js/owl.carousel.js"></script>
-
-    <!-- Ollie js -->
-    <script>
-        /*!
-    =========================================================
-    * Ollie Landing page
-    =========================================================
+    <!-- JQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
-    * Copyright: 2019 DevCRUD (https://devcrud.com)
-    * Licensed: (https://devcrud.com/licenses)
-    * Coded by www.devcrud.com
-    
-    =========================================================
-    
-    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    */
-
-        // smooth scroll
-        // smooth scroll
-        $(document).ready(function () {
-            $(".navbar .nav-link").on('click', function (event) {
-
-                if (this.hash !== "") {
-
-                    event.preventDefault();
-
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 700, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-
-        // portfolio carousel
-        $('#owl-portfolio').owlCarousel({
-            margin: 30,
-            dots: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                600: {
-                    items: 3,
-                    nav: false
-                },
-                1000: {
-                    items: 4,
-                    nav: false,
-                    loop: false
-                }
-            }
-        });
-
-        // testmonial carousel
-        $('#owl-testmonial').owlCarousel({
-            center: true,
-            items: 1,
-            loop: true,
-            nav: true,
-            dots: false
-        })
-    </script>
+    <!-- Custom JS for dynamic content -->
+    <script type="module" src="js/main.js"></script>
 
 </body>
 
