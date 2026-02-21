@@ -301,6 +301,12 @@ a:hover {
     padding: 0;
     border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-logo-wrapper a:hover .career-logo {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(133, 109, 229, 0.3);
 }
 
 /* Default avatar icon for missing logos */
@@ -343,6 +349,17 @@ a:hover {
     color: var(--primary-color);
     margin-bottom: 8px;
     font-weight: 500;
+}
+
+.career-item .career-company a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.career-item .career-company a:hover {
+    color: var(--text-primary);
+    opacity: 0.8;
 }
 
 .career-item .career-duration {
@@ -489,6 +506,31 @@ footer a {
 @media (max-width: 991px) {
     .navbar {
         background: rgba(13, 13, 15, 0.95) !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .navbar .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .navbar-toggler {
+        order: 1;
+        margin-left: 0;
+    }
+    
+    .navbar-brand {
+        order: 2;
+        margin-right: 0;
+    }
+    
+    .navbar-collapse {
+        order: 3;
+        flex-basis: 100%;
     }
 }
 
@@ -518,6 +560,24 @@ footer a {
     
     .career-logo-wrapper {
         margin-bottom: 15px;
+    }
+
+    /* University mobile adjustments */
+    .column3, .column2 {
+        width: 100%; /* Stack year buttons on mobile */
+        margin-bottom: 10px;
+    }
+    
+    .pdf-element {
+        flex-direction: column; /* Stack title and buttons */
+        align-items: flex-start;
+    }
+    
+    .middle-div {
+        width: 100%;
+        justify-content: flex-start; /* Align buttons left on mobile */
+        margin-top: 15px;
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
     }
 }
 
@@ -585,8 +645,8 @@ footer a {
     transition: all 0.3s ease;
 }
 .btn2.active, .btn2:hover {
-    background: rgba(133, 109, 229, 0.4);
-    color: #fff;
+    background: var(--primary-color) !important;
+    color: #fff !important;
     border: none;
 }
 .pdf-section {

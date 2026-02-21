@@ -81,21 +81,24 @@ export const experiences = [
         company: "Focoos AI",
         duration: "May 2025 - Present",
         description: "Artificial Intelligence, Computer Vision and +5 skills.",
-        logoUrl: "imgs/logos/focoos_logo.jpg" // Replace with your company logo here
+        logoUrl: "imgs/logos/focoos_logo.jpg",
+        companyUrl: "https://focoos.ai/"
     },
     {
         title: "AI Engineer Intern",
         company: "Focoos AI",
         duration: "Feb 2025 - Apr 2025",
         description: "Worked on improving Focoos AI's computer vision services by integrating model architectures and building efficient keypoint estimation models. Contributed to infrastructure for keypoint data management.",
-        logoUrl: "imgs/logos/focoos_logo.jpg" // Replace with your company logo here
+        logoUrl: "imgs/logos/focoos_logo.jpg",
+        companyUrl: "https://focoos.ai/"
     },
     {
         title: "Visiting Student",
         company: "ETH Zürich",
         duration: "Apr 2024 - Sep 2024",
         description: "Taking part in experiential research activities, actively contributing to innovative projects while working on my Master's thesis 'Hand tool pose estimation during surgical activities' at pd|z Product.",
-        logoUrl: "imgs/logos/eth_zurich_logo.jpeg" // Replace with your company logo here
+        logoUrl: "imgs/logos/eth_zurich_logo.jpeg",
+        companyUrl: "https://pdz.ethz.ch/"
     },
     {
         title: "Tutor for students",
@@ -109,6 +112,7 @@ export const experiences = [
         company: "Fondazione Compagnia di San Paolo",
         duration: "Jun 2017 - Jul 2017",
         description: "Helped students through the 'La Scuola Ti sPiazza' project by offering peer-to-peer tutoring and guidance to middle school students.",
-        logoUrl: "imgs/logos/compagnia_di_san_paolo_logo.jpeg" // Replace with your company logo here
+        logoUrl: "imgs/logos/compagnia_di_san_paolo_logo.jpeg",
+        companyUrl: "https://www.compagniadisanpaolo.it/it/"
     }
 ];
