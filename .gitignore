@@ -2,6 +2,6 @@
 pdf->link.md
 /.DS_store
 **/.DS_Store
-.DS_Store
-.DS_Store
-.DS_Store
+node_modules
+dist
+.vite
