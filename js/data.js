@@ -116,3 +116,39 @@ export const experiences = [
         companyUrl: "https://www.compagniadisanpaolo.it/it/"
     }
 ];
+
+export const education = [
+    {
+        degree: "Master of Science - MS, Data Science and Engineering",
+        institution: "Politecnico di Torino",
+        duration: "Oct 2022 - Jul 2025",
+        description: "Main Courses: Data science lab: process and methods, Machine learning and Deep learning, Mathematical methods for Data Science. Skills: Matematica, Deep Learning.",
+        logoUrl: "imgs/logos/polito_logo.png",
+        institutionUrl: "https://www.polito.it/"
+    },
+    {
+        degree: "Master's thesis",
+        institution: "ETH Zürich",
+        duration: "Apr 2024 - Sep 2024",
+        description: "Working on my master's thesis 'Hand tool pose estimation during surgical activities' at Mixed Reality lab, pd|z Product Development Group Zurich. Skills: Computer Vision, Python.",
+        logoUrl: "imgs/logos/eth_zurich_logo.jpeg",
+        institutionUrl: "https://pdz.ethz.ch/"
+    },
+    {
+        degree: "Bachelor's Degree in Computer Engineering",
+        institution: "Politecnico di Torino",
+        duration: "Sep 2019 - Jul 2022",
+        description: "Main Courses: Linear algebra and geometry, Algorithms and Programming, Computer architecture. Skills: Problem solving, Automatic Controls.",
+        logoUrl: "imgs/logos/polito_logo.png",
+        institutionUrl: "https://www.polito.it/"
+    },
+    {
+        degree: "High School Diploma",
+        institution: "Liceo Scientifico Filippo Juvarra",
+        duration: "Sep 2015 - Jul 2019",
+        description: "Scientific High School Diploma.",
+        logoUrl: "imgs/logos/juvarra_logo.jpg",
+        institutionUrl: "https://www.liceojuvarra.edu.it/"
+    }
+];
+

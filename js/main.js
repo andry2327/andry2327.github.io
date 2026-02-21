@@ -1,7 +1,36 @@
 // js/main.js
-import { projects, experiences } from './data.js';
+import { projects, experiences, education } from './data.js';
 
-// Render Projects
+// Render University
+const universityContainer = document.getElementById('university-container');
+if (universityContainer) {
+    education.forEach(edu => {
+        const eduElement = document.createElement('div');
+        eduElement.classList.add('col-md-6', 'mb-4');
+        
+        let logoHtml = '';
+        if (edu.logoUrl) {
+            logoHtml = `<img src="${edu.logoUrl}" alt="${edu.institution} logo" class="edu-logo" onerror="this.onerror=null; this.outerHTML='<div class=\\'edu-logo-placeholder\\'><i class=\\'fa-solid fa-university\\'></i></div>';">`;
+        } else {
+            logoHtml = `<div class="edu-logo-placeholder"><i class="fa-solid fa-university"></i></div>`;
+        }
+
+        eduElement.innerHTML = `
+            <div class="edu-card">
+                <div class="edu-logo-wrapper">
+                    ${edu.institutionUrl ? `<a href="${edu.institutionUrl}" target="_blank">${logoHtml}</a>` : logoHtml}
+                </div>
+                <div class="edu-content">
+                    <h5 class="edu-title">${edu.degree}</h5>
+                    <p class="edu-institution">${edu.institutionUrl ? `<a href="${edu.institutionUrl}" target="_blank">${edu.institution}</a>` : edu.institution}</p>
+                    <span class="edu-duration">${edu.duration}</span>
+                    <p class="edu-description">${edu.description}</p>
+                </div>
+            </div>
+        `;
+        universityContainer.appendChild(eduElement);
+    });
+}
 const projectsContainer = document.getElementById('projects-container');
 if (projectsContainer) {
     projects.forEach(project => {
