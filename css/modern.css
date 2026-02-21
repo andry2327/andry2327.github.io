@@ -153,7 +153,10 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../imgs/background.png') no-repeat center center/cover;
+    background-image: url('../imgs/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed; /* Parallax flow */
     overflow: hidden;
 }
@@ -612,7 +615,6 @@ footer a {
 
     .header {
         background-attachment: scroll;
-        background-position: center bottom;
     }
 
     .navbar {
